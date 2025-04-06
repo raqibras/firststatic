@@ -1,21 +1,49 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  background-color: darkslategrey;
+  color: beige;
+  font-family:cursive;
+  margin:0;
+  background-image: url(coding_languages.webp);
+  background-size: auto;
 }
-
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
-}
-
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
-}
-
-main > h1 {
+h1,p{
+  margin:1em auto;
   text-align: center;
-  font-size: 3.5em;
+}
+form{
+ width:50vw ;
+ margin:auto;
+ padding-top: 5px;
+}
+.personaldetails{
+  width:75%;
+  background-color: darkgray;
+ border-style:none; 
+ float: right;
+ border-radius: 5px;
+ color:black;
+ 
+}
+fieldset{
+  padding-bottom: 20px;
+  border-style:none;
+  border-bottom: solid;
+  border-color:darkgray;
+}
+fieldset:last-of-type{
+  border-style:none;
+}
+label{
+  font-weight: bold;
+}
+input[type=submit]{
+  display: block;
+  width:50%;
+  margin:0 auto;
+  background-color: darkgray;
+  color:black;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  
 }

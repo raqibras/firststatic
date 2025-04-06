@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Competetion</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <h1 id="title">Coding Competetion</h1>
+  <p id="description">Fill details in the form to participate</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input id="name" class="personaldetails" type="text" required placeholder="Enter name"></label><br>
+      <label id="email-label" for="email">Email <input type="email" id="email" class="personaldetails" required placeholder="Enter email ID"></label><br>
+      <label id="number-label" for="number">Age <input type="number" id="number" class="personaldetails" min="15" max="25" required placeholder="Enter your age"></label>
+    </fieldset>
+    <fieldset>
+      <label for="proficiency">What is your coding proficiency?
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Noob</option>
+          <option value="2">Alright</option>
+          <option value="3">Great</option>
+          <option value="4">Master</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Participated in competetive coding before?</legend>
+      <label for="contested-before"><input id="contested-before" type="radio" name="contest-status" value="contested-before" checked>Yes</label>
+      <label for="not-contested"><input id="not-contested" type="radio" name="contest-status" value="not-contested">No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Coding languages proficient in:</legend>
+      <input type="checkbox" value="java" name="java"> Java<br>
+      <input type="checkbox" value="python" name="python" >Python<br>
+      <input type="checkbox" value="c" name="c"> C<br>
+      <input type="checkbox" value="javascript" name="javascript"> Javascript<br>
+      <input type="checkbox" value="html" name="html"> HTML<br>
+      <input type="checkbox" value="css" name="cc"> CSS<br>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Bio: 
+        <textarea id="bio" rows="3" cols="30" placeholder="Tell us more about yourself">
+        </textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit">
+  </form>
 </body>
-
 </html>
+
